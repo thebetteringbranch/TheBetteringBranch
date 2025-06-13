@@ -812,8 +812,8 @@ body {
 
 .get-involved-section .image-grid img {
     height: auto;
-    max-height: 400px;
-    object-fit: contain;
+    max-height: 500px;
+    object-fit: cover;
     border-radius: 12px;
     margin-top: 1rem;
 }
