@@ -502,6 +502,10 @@ body {
     color: var(--green-ll);
 }
 
+#lol {
+    text-decoration: none;
+}
+
 /* Hamburger Button */
 .hamburger {
     margin-top: -40px;
@@ -781,6 +785,11 @@ body {
 /* Get Involved Section */
 .get-involved-section {
     text-align: center;
+}
+
+#volunteer {
+    scroll-behavior: smooth;
+    scroll-margin-top: 10px;
 }
 
 .get-involved-button {
