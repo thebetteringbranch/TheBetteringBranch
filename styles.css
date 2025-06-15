@@ -117,9 +117,9 @@ body {
 
 /* Site Header */
 .site-header {
-    margin-top: 80px;
+    margin-top: 100px;
     background: linear-gradient(135deg, var(--green-ll), var(--green-l));
-    padding: 2rem;
+    padding: 10rem;
     text-align: center;
     border-bottom-left-radius: 32px;
     border-bottom-right-radius: 32px;
