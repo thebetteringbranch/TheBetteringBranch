@@ -764,11 +764,15 @@ body {
 }
 
 .header-overlay-text {
-    position: relative;
+    position: absolute;  /* change from relative */
+    top: 50%;
+    left: 50%;            /* add this */
+    transform: translate(-50%, -50%);  /* horizontal + vertical centering */
     z-index: 3;
     text-align: center;
-    top: 50%;
-    transform: translateY(-50%);
+    width: 100%;          /* ensure full width */
+    padding: 0 1rem;      /* some side padding for small screens */
+    box-sizing: border-box;
     color: white;
 }
 
