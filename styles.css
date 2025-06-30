@@ -136,6 +136,22 @@ body {
     font-size: 1.25rem;
     color: var(--white);
 }
+
+@media (max-width: 768px) {
+    .site-header {
+        padding: 3rem 1rem;
+    }
+
+    .site-header h1 {
+        font-size: 2rem;
+    }
+
+    .site-header p {
+        font-size: 1rem;
+    }
+}
+
+
 /* Carousel Section */
 .carousel-section {
     margin: 2rem auto;
