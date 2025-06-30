@@ -872,10 +872,11 @@ body {
 }
 
 img[src*="insta.jpg"] {
-    object-fit: contain;
     width: 100%;
     height: auto;
-    max-height: 500px;
+    object-fit: contain;
+    max-width: 100%;
+    display: block;
     border-radius: 8px;
 }
 
