@@ -835,8 +835,8 @@ body {
 }
 
 .cta-icon {
-    width: 120px;
-    height: 120px;
+    width: 20px;
+    height: auto;
 }
 
 .get-involved-section .image-grid img {
