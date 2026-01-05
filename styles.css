@@ -839,6 +839,7 @@ body {
     height: 20px;
    object-fit: contain;
     flex-shrink: 0;
+     display: block;
 }
 
 .get-involved-section .image-grid img {
