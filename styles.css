@@ -828,6 +828,10 @@ body {
     border-radius: 8px;
     text-decoration: none;
     transition: background-color 0.3s ease;
+
+     line-height: normal;    
+    min-height: 48px;        
+    overflow: visible; 
 }
 
 .cta-button:hover {
