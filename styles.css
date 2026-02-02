@@ -867,9 +867,10 @@ body {
     .nav-logo {
         max-height: 36px; /* Reduce logo size */
     }
-.gif {
+.square-pic {
   width: 10px;
   aspect-ratio: 1 / 1;
+     object-fit: cover;
 }
     .hamburger {
         width: 32px;
