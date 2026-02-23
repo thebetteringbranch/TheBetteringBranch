@@ -530,7 +530,7 @@ body {
 }
 
 .sdg-card {
-  flex: 1 1 200px; /* grow/shrink, min width 300px */
+  flex: 1 1 400px; /* grow/shrink, min width 300px */
   text-align: center; /* neat text alignment */
   padding: 1rem;
 }
