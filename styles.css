@@ -516,6 +516,17 @@ body {
   border-radius: 6px;
 }
 
+.sdg-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem; /* consistent spacing */
+  justify-content: center; /* centers rows */
+}
+
+.sdg-card {
+  flex: 1 1 300px; /* grow/shrink, min width 300px */
+  text-align: center; /* neat text alignment */
+  padding: 1rem;
 }
 
 /* NAVBAR */
