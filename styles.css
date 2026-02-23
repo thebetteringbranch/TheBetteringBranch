@@ -471,8 +471,8 @@ body {
 
 /* SGD SECTION */
 .sdg-section {
-  padding: 80px 10%;
-  background: transparent; /* or remove background entirely */
+  padding: 50px 10%;
+  background: transparent; 
 }
 
 #sdg h2 {
@@ -493,7 +493,7 @@ body {
   display: inline-block;
   background-color: #ffffff;
   border-radius: 15px;
-  width: 180px;
+  width: 400px;
   margin: 15px;
   padding: 20px;
   box-shadow: 0 8px 20px #00000033;
@@ -530,7 +530,7 @@ body {
 }
 
 .sdg-card {
-  flex: 1 1 400px; /* grow/shrink, min width 300px */
+  flex: 1 1 600px; /* grow/shrink, min width 300px */
   text-align: center; /* neat text alignment */
   padding: 1rem;
 }
