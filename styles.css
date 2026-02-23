@@ -494,7 +494,7 @@ body {
   background-color: #ffffff;
   border-radius: 15px;
   width: 400px;
-  margin: 15px;
+  margin: 10px;
   padding: 20px;
   box-shadow: 0 8px 20px #00000033;
   overflow: hidden;
@@ -529,11 +529,6 @@ body {
   justify-content: center; /* centers rows */
 }
 
-.sdg-card {
-  flex: 1 1 600px; /* grow/shrink, min width 300px */
-  text-align: center; /* neat text alignment */
-  padding: 1rem;
-}
 
 /* NAVBAR */
 .navbar {
