@@ -470,10 +470,9 @@ body {
 }
 
 /* SGD SECTION */
-#sdg {
-  padding: 80px 20px;
-  background-color: #ffe6f0;
-  text-align: center;
+.sdg-section {
+  padding: 80px 10%;
+  background: transparent; /* or remove background entirely */
 }
 
 #sdg h2 {
