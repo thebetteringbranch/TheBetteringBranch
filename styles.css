@@ -854,6 +854,136 @@ body {
     margin-top: 1rem;
 }
 
+impact{padding:80px 24px 96px;background:#f4efe6;position:relative;overflow:hidden;}
+.impact::before{
+  content:'IMPACT';position:absolute;top:50%;left:50%;
+  transform:translate(-50%,-50%);
+  font-family:'Fraunces',serif;font-size:clamp(100px,20vw,210px);
+  font-weight:900;color:rgba(45,106,79,.038);white-space:nowrap;
+  pointer-events:none;user-select:none;letter-spacing:-2px;
+}
+
+/* ── GRID ── */
+.stats-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:18px;
+  max-width:980px;
+  margin:0 auto;
+}
+
+/* ── CARD BASE ── */
+.stat-card{
+  border-radius:28px;padding:36px 32px 32px;
+  position:relative;overflow:hidden;
+  opacity:0;transform:translateY(36px);
+  transition:opacity .65s ease,transform .65s ease,box-shadow .3s ease;
+}
+.stat-card.visible{opacity:1;transform:translateY(0);}
+.stat-card:hover{transform:translateY(-6px)!important;box-shadow:0 22px 64px rgba(0,0,0,.13);}
+
+/* card colours */
+.card-volunteers {background:#0d2b1a;transition-delay:.00s;}
+.card-online     {background:#0a1e3d;transition-delay:.10s;}
+.card-elephant   {background:#fff8f2;border:2px solid #f4c09a;transition-delay:.18s;}
+.card-community  {background:#1a3c2a;transition-delay:.26s;}
+
+/* ── CARD HEADER TEXT ── */
+.card-eyebrow{font-size:9px;letter-spacing:3.5px;text-transform:uppercase;font-weight:800;display:block;margin-bottom:10px;}
+.card-volunteers .card-eyebrow{color:#52b788;}
+.card-online     .card-eyebrow{color:#74c0fc;}
+.card-elephant   .card-eyebrow{color:#c05621;}
+.card-community  .card-eyebrow{color:#95d5b2;}
+
+.card-num{font-family:'Fraunces',serif;font-weight:900;font-size:clamp(2.4rem,4.5vw,3.6rem);line-height:1;display:block;margin-bottom:4px;}
+.card-volunteers .card-num{color:#fff;}
+.card-online     .card-num{color:#fff;}
+.card-elephant   .card-num{color:#7b2d00;}
+.card-community  .card-num{color:#fff;}
+
+.card-num sup{font-size:.42em;vertical-align:super;}
+.card-volunteers .card-num sup{color:#52b788;}
+.card-online     .card-num sup{color:#74c0fc;}
+.card-elephant   .card-num sup{color:#e76f51;}
+.card-community  .card-num sup{color:#95d5b2;}
+
+.card-desc{font-size:12px;font-weight:600;text-transform:uppercase;letter-spacing:1.5px;line-height:1.5;margin-bottom:22px;}
+.card-volunteers .card-desc{color:rgba(255,255,255,.45);}
+.card-online     .card-desc{color:rgba(255,255,255,.4);}
+.card-elephant   .card-desc{color:rgba(192,86,33,.6);}
+.card-community  .card-desc{color:rgba(255,255,255,.4);}
+
+* ══════════════════════════════════════════
+   CARD 1 — VOLUNTEERS: person icon grid
+══════════════════════════════════════════ */
+.people-grid{display:flex;flex-wrap:wrap;gap:4px;margin-top:4px;}
+.person-fig{opacity:0;transform:scale(0) translateY(6px);transition:opacity .2s ease,transform .32s cubic-bezier(.34,1.56,.64,1);}
+.person-fig.shown{opacity:1;transform:scale(1) translateY(0);}
+.legend-note{margin-top:10px;font-size:9px;color:rgba(255,255,255,.25);font-weight:700;letter-spacing:1.2px;text-transform:uppercase;}
+
+/* ══════════════════════════════════════════
+   CARD 2 — ONLINE: ripple signal rings
+══════════════════════════════════════════ */
+.signal-wrap{
+  position:relative;display:flex;align-items:center;justify-content:center;
+  height:180px;margin-top:4px;
+}
+.signal-dot{
+  width:18px;height:18px;border-radius:50%;
+  background:#74c0fc;box-shadow:0 0 18px rgba(116,192,252,.6);
+  position:relative;z-index:2;flex-shrink:0;
+}
+.ripple{
+  position:absolute;border-radius:50%;
+  border:1.5px solid rgba(116,192,252,.7);
+  animation:rippleOut 2.8s ease-out infinite;
+  opacity:0;
+}
+.ripple:nth-child(2){width:50px; height:50px; animation-delay:.0s;}
+.ripple:nth-child(3){width:90px; height:90px; animation-delay:.4s;}
+.ripple:nth-child(4){width:136px;height:136px;animation-delay:.8s;}
+.ripple:nth-child(5){width:186px;height:186px;animation-delay:1.2s;}
+.ripple:nth-child(6){width:240px;height:240px;animation-delay:1.6s;}
+@keyframes rippleOut{
+  0%  {opacity:.8;transform:scale(.5);}
+  60% {opacity:.3;}
+  100%{opacity:0;transform:scale(1);}
+}
+
+/* Phone icon in centre */
+.signal-phone{
+  position:absolute;z-index:3;
+  display:flex;flex-direction:column;align-items:center;gap:6px;
+}
+.sp-screen{
+  width:40px;height:60px;border-radius:8px;
+  background:rgba(255,255,255,.1);border:2px solid rgba(116,192,252,.5);
+  display:flex;flex-direction:column;align-items:center;justify-content:center;gap:3px;
+  padding:6px;
+}
+.sp-bar{height:3px;border-radius:2px;background:rgba(116,192,252,.6);}
+.sp-bar:nth-child(1){width:70%;}
+.sp-bar:nth-child(2){width:90%;}
+.sp-bar:nth-child(3){width:60%;}
+
+/* Floating person icons around ripple */
+.fp-icon{
+  position:absolute;opacity:0;
+  animation:fpFloat 3.5s ease-in-out infinite;
+}
+@keyframes fpFloat{
+  0%,100%{transform:translateY(0);opacity:.9;}
+  50%{transform:translateY(-8px);opacity:1;}
+}
+.fp-icon:nth-child(7) {top:10px; left:12px; animation-delay:.2s;}
+.fp-icon:nth-child(8) {top:10px; right:16px;animation-delay:.6s;}
+.fp-icon:nth-child(9) {bottom:14px;left:20px;animation-delay:1.0s;}
+.fp-icon:nth-child(10){bottom:14px;right:14px;animation-delay:1.4s;}
+.fp-icon:nth-child(11){top:50%;left:4px; transform:translateY(-50%);animation-delay:1.8s;}
+.fp-icon:nth-child(12){top:50%;right:4px;transform:translateY(-50%);animation-delay:.9s;}
+.fp-icon.show{animation-play-state:running;}
+
+
 @media (max-width: 768px) {
     .nav-container {
         padding: 0.5rem 0;
