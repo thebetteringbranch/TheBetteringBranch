@@ -487,7 +487,7 @@ display: flex;
     text-align: center;
     margin-bottom: 1rem;
     margin-top: 0.5rem;
-    max-width: 100%; /* Ensure it doesn’t overflow */
+    max-width: 1200px; /* Ensure it doesn’t overflow */
     white-space: normal; /* Allow text to wrap */
     box-sizing: border-box; /* Include padding in width calculation */
 }
@@ -495,12 +495,12 @@ display: flex;
 .sdg {
   display: inline-block;
   flex: 1 1 200px
-  background-color: #ffffff;
   border-radius: 15px;
-  max-width: 900px;
+  max-width: 1200px;
   margin: 10px;
   padding: 1rem;
   box-shadow: 0 8px 20px #00000033;
+ background-color: #ffffff;
   overflow: hidden;
   vertical-align: top;
   transition: transform 0.3s, box-shadow 0.3s;
