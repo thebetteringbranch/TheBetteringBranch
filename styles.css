@@ -491,11 +491,12 @@ body {
 
 .sdg {
   display: inline-block;
+flex: 1 1 200px
   background-color: #ffffff;
   border-radius: 15px;
-  width: 400px;
+  max-width: 500px;
   margin: 10px;
-  padding: 20px;
+  padding: 1rem;
   box-shadow: 0 8px 20px #00000033;
   overflow: hidden;
   vertical-align: top;
