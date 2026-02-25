@@ -475,6 +475,7 @@ body {
 display: flex;
     flex-wrap: wrap;
     gap: 1.5rem;
+      border-radius: 15px;
   background-color: transparent; 
 }
 
@@ -495,11 +496,11 @@ display: flex;
 .sdg {
   display: inline-block;
   flex: 1 1 200px
-  border-radius: 15px;
   max-width: 1200px;
   margin: 10px;
   padding: 1rem;
   box-shadow: 0 8px 20px #00000033;
+    border-radius: 15px;
  background-color: #ffffff;
   overflow: hidden;
   vertical-align: top;
