@@ -472,6 +472,9 @@ body {
 /* SGD SECTION */
 .sdg-section {
   padding: 50px 10%;
+display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
   background: transparent; 
 }
 
