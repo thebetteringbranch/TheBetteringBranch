@@ -474,7 +474,7 @@ body {
   padding: 10px 10%;
 display: flex;
     flex-wrap: wrap;
-    gap: 1.5rem;
+    gap: 1rem;
       border-radius: 15px;
   background-color: transparent; 
 }
@@ -483,11 +483,9 @@ display: flex;
    background-color: var(--green-m);
     color: var(--white);
     display: inline-block;
-    padding: 0.5rem 1rem;
+    padding: 0.5rem;
     border-radius: 8px;
     text-align: center;
-    margin-bottom: 1rem;
-    margin-top: 0.5rem;
     max-width: 1200px; /* Ensure it doesn’t overflow */
     white-space: normal; /* Allow text to wrap */
     box-sizing: border-box; /* Include padding in width calculation */
@@ -530,7 +528,7 @@ display: flex;
 .sdg-container {
   display: flex;
   flex-wrap: wrap;
-  gap: 2rem; /* consistent spacing */
+  gap: 0.5rem; /* consistent spacing */
   justify-content: center; /* centers rows */
 }
 
