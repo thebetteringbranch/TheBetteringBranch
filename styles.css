@@ -505,10 +505,6 @@ display: flex;
   transition: transform 0.3s, box-shadow 0.3s;
 }
 
-.sdg:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 12px 25px #00000033;
-}
 
 .sdg h4 {
   font-size: 1.5rem;
