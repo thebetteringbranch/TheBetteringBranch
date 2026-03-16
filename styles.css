@@ -765,6 +765,51 @@ display: flex;
     }
 }
 
+
+/* PAST RUNS SECTION */
+#team {
+  padding: 80px 20px;
+    background-color: var(--green-m);
+  text-align: center;
+}
+
+#team h2 {
+  font-size: 2.5rem;
+  margin-bottom: 5px;
+   margin-top: 20px;
+  color: #2b2b2b;
+}
+
+.team {
+  display: inline-block;
+  background-color: #ffffff;
+  border-radius: 15px;
+  width: 250px;
+  margin: 15px;
+  padding: 20px;
+  box-shadow: 0 8px 20px #00000033;
+  overflow: hidden;
+  vertical-align: top;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+
+
+.team h4 {
+  font-size: 1.5rem;
+  color: #2b2b2b;
+}
+
+.team p {
+  color: #555555;
+}
+
+.team img {
+  width: auto;
+  height: 150px;
+  border-radius: 6px;
+}
+
 /* Leaderboard section styling */
 .leaderboard {
     display: flex;
