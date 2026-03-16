@@ -897,13 +897,14 @@ display: flex;
 }
 
 .header-overlay-text h1 {
-    font-size: 3rem;
+    font-size: 3rem; 
+    line-height: 1rem; 
     margin: 0;
 }
 
 .header-overlay-text p {
     font-size: 1.2rem;
-    margin-top: 5rem;
+    margin-top: 0.1rem;
 }
 
 /* Get Involved Section */
