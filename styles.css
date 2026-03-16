@@ -124,7 +124,7 @@ body {
 .site-header {
     margin-top: 100px;
     background: linear-gradient(135deg, var(--green-ll), var(--green-l));
-    padding: 30px;
+    padding: 70px;
     text-align: center;
     border-bottom-left-radius: 30px;
     border-bottom-right-radius: 30px;
