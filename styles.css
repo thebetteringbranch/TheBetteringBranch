@@ -855,6 +855,7 @@ display: flex;
             .branch-tab.active {
                 background-color: var(--green-m);
                 color: var(--white);
+                
             }
  
             /* Tab Panels */
@@ -864,7 +865,7 @@ display: flex;
  
             .tab-panel.active {
                 display: block;
-                animation: slideIn 0.4s forwards;
+                animation: slideIn 0.1s forwards;
             }
 
 @keyframes glowPulse {
