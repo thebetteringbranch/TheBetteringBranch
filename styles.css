@@ -824,6 +824,49 @@ display: flex;
     overflow: hidden;
 }
 
+ /* Tab Bar */
+            .branch-tabs {
+                display: flex;
+                justify-content: center;
+                gap: 1rem;
+                margin: 2rem auto 0;
+                max-width: 1200px;
+                padding: 0 1rem;
+                flex-wrap: wrap;
+            }
+ 
+            .branch-tab {
+                font-family: "Poppins", sans-serif;
+                font-weight: 600;
+                font-size: 1rem;
+                padding: 0.6rem 1.6rem;
+                border-radius: 8px;
+                border: 2px solid var(--green-m);
+                cursor: pointer;
+                background-color: var(--white);
+                color: var(--green-m);
+                transition: background-color 0.2s ease, color 0.2s ease;
+            }
+ 
+            .branch-tab:hover {
+                background-color: var(--green-ll);
+            }
+ 
+            .branch-tab.active {
+                background-color: var(--green-m);
+                color: var(--white);
+            }
+ 
+            /* Tab Panels */
+            .tab-panel {
+                display: none;
+            }
+ 
+            .tab-panel.active {
+                display: block;
+                animation: slideIn 0.4s forwards;
+            }
+
 @keyframes glowPulse {
     0% {
         box-shadow: 0 0 10px #a5f3b1, 0 0 20px #d1ffd5;
