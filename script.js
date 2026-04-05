@@ -87,3 +87,11 @@ document.addEventListener("DOMContentLoaded", function () {
     items[current].classList.add("active");
   }, 3000); // change every 3 seconds
 });
+
+function switchTab(branch, btn) {
+  document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+  document.querySelectorAll('.tab-panel').forEach(p => p.classList.remove('active'));
+  btn.classList.add('active');
+  document.getElementById('panel-' + branch).classList.add('active');
+  window.scrollTo({ top: document.querySelector('.tab-bar-wrapper').offsetTop - 64, behavior: 'smooth' });
+}
