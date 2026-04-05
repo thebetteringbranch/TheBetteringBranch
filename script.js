@@ -88,10 +88,17 @@ document.addEventListener("DOMContentLoaded", function () {
   }, 3000); // change every 3 seconds
 });
 
-function switchTab(branch, btn) {
-  document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
-  document.querySelectorAll('.tab-panel').forEach(p => p.classList.remove('active'));
-  btn.classList.add('active');
-  document.getElementById('panel-' + branch).classList.add('active');
-  window.scrollTo({ top: document.querySelector('.tab-bar-wrapper').offsetTop - 64, behavior: 'smooth' });
-}
+
+
+  function switchTab(branch, btn) {
+                // Remove active from all tabs and panels
+                document.querySelectorAll('.branch-tab').forEach(b => b.classList.remove('active'));
+                document.querySelectorAll('.tab-panel').forEach(p => p.classList.remove('active'));
+ 
+                // Set the clicked button and its panel as active
+                btn.classList.add('active');
+                document.getElementById('tab-' + branch).classList.add('active');
+ 
+                // Scroll back up to the tab bar
+                window.scrollTo({ top: document.querySelector('.branch-tabs').offsetTop - 90, behavior: 'smooth' });
+            }
