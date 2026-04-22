@@ -142,6 +142,22 @@ body {
     color: var(--white);
 }
 
+.impact-banner {
+  background-color: #2d6a4f;
+  text-align: center;
+  padding: 10px;
+}
+
+.impact-banner a {
+  color: #ffffff;
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+
+.impact-banner a:hover {
+  text-decoration: underline;
+}
+
 @media (max-width: 768px) {
     .site-header {
         padding: 3rem 1rem;
