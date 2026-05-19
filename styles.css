@@ -16,6 +16,7 @@
     --green-ll: #c4ebbf;
     --pale: #e6edbe;
     --white: #ffffff;
+    --grey: #787276;
 }
 
 /* Global Styles */
@@ -233,6 +234,11 @@ body {
 
 .carousel-control.next {
     right: 1rem;
+}
+
+.subtitle {
+  color: grey;
+  font-size: 1rem;
 }
 
 /* Mobile-specific styles */
