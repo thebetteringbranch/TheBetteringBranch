@@ -241,6 +241,11 @@ body {
   font-size: 1rem;
 }
 
+.image-card {
+    display: flex;
+    flex-direction: column;
+}
+
 /* Mobile-specific styles */
 @media (max-width: 768px) {
     /* Adjust carousel height on mobile */
