@@ -541,7 +541,7 @@ display: flex;
   justify-content: center; /* centers rows */
 }
 
-.impact metrics {
+.impactmetrics {
   width: auto;
   height: 250px;
   border-radius: 6px;
