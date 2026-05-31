@@ -543,9 +543,59 @@ display: flex;
 
 .impact metrics img {
   width: auto;
-  height: 400px;
+  height: 250px;
   border-radius: 6px;
 }
+
+.impact metrics-section {
+display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+      border-radius: 15px;
+  background-color: transparent; 
+}
+
+#impact metrics h2 {
+   background-color: var(--green-m);
+    color: var(--white);
+    display: inline-block;
+    border-radius: 8px;
+    text-align: center;
+    max-width: 1200px; /* Ensure it doesn’t overflow */
+    white-space: normal; /* Allow text to wrap */
+    box-sizing: border-box; /* Include padding in width calculation */
+}
+
+.impact metrics {
+  display: inline-block;
+  flex: 1 1 200px
+  max-width: 1200px;
+  margin: 1px;
+  padding: 1rem;
+    border-radius: 15px;
+ background-color: #ffffff;
+  overflow: hidden;
+  vertical-align: top;
+}
+
+
+.impact metrics h4 {
+  font-size: 1.5rem;
+  color: #2b2b2b;
+}
+
+.impact metrics p {
+  color: #555555;
+}
+
+
+.impact metrics-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem; /* consistent spacing */
+  justify-content: center; /* centers rows */
+}
+
 
 /* NAVBAR */
 .navbar {
@@ -603,7 +653,7 @@ display: flex;
 
 .pdf {
    width: auto;
-  height: 400px;
+  height: 300px;
     aspect-ratio: 8.5 / 11;
     border-radius: 10px;
     margin-top: 20px;
